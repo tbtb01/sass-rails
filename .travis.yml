@@ -1,12 +1,7 @@
 language: ruby
 
 rvm:
- - 1.9.3
- - 2.0.0
- - 2.1
- - 2.2.5
- - 2.3.1
- - rbx-2
+ - 2.4.1
 
 gemfile:
   - gemfiles/Gemfile-rails-4-0
@@ -45,21 +40,3 @@ matrix:
       rvm: 2.0.0
     - gemfile: gemfiles/Gemfile-rails-5-0
       rvm: 2.1
-  include:
-    - gemfile: Gemfile
-      rvm: 2.2.5
-    - gemfile: Gemfile
-      rvm: 2.3.1
-
-notifications:
-  email: false
-  irc:
-    on_success: change
-    on_failure: always
-    channels:
-      - "irc.freenode.org#rails-contrib"
-  campfire:
-    on_success: change
-    on_failure: always
-    rooms:
-      - secure: "CGWvthGkBKNnTnk9YSmf9AXKoiRI33fCl5D3jU4nx3cOPu6kv2R9nMjt9EAo\nOuS4Q85qNSf4VNQ2cUPNiNYSWQ+XiTfivKvDUw/QW9r1FejYyeWarMsSBWA+\n0fADjF1M2dkDIVLgYPfwoXEv7l+j654F1KLKB69F0F/netwP9CQ="
